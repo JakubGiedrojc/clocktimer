@@ -1,11 +1,17 @@
 import {TimeModel} from "./time.model";
 
 export class DefaultTime {
-  public static getDefaultTime(): TimeModel {
-    return {
 
-      seconds: 59,
-      minutes: 0
-    }
+  defaultTime: TimeModel={
+
+  seconds: 59,
+  minutes: 0
+};
+  public getDefaultTime(): TimeModel {
+    return this.defaultTime;
   }
+  public setDefaultTime(minutes: number){
+    this.defaultTime.minutes=minutes;
+  }
+
 }

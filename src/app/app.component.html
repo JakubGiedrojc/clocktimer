@@ -7,3 +7,7 @@
   <button type="button" (click)="resetTime()" [disabled]="!isPaused">reset</button>
 </div>
 
+<form [formGroup]="timeForm" (ngSubmit)="setTime()" >
+  <input type="number" formControlName="minutes"/>
+  <button>Set time</button>
+</form>
