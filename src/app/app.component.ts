@@ -36,7 +36,7 @@ private countDown()
     if (this.time.seconds > 0) {
       this.time.seconds -= 1;
     } else {
-      this.time.seconds = 59;
+      this.time.seconds = 19;
     }
     if (this.time.minutes === 0 && this.time.seconds === 0) {
       this.subscription?.unsubscribe();
